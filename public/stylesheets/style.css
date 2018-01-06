@@ -1,0 +1,52 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+form {
+  border: 1px solid #ccc;
+  padding: 15px;
+  clear: both;
+  overflow: auto;
+}
+
+form label{
+  float:left;
+  margin-right: 7px;
+  height: 25px;
+}
+form input{
+  float:left;
+  margin-right: 15px;
+}
+h3{
+  margin-top: 0px;
+}
+form span {
+  color: #42BF42;
+  font-size: 16px;
+}
+form p {
+  margin: 0px;
+}
+.parameter {
+  margin: 7px 0px;
+  color: #42BF42;
+  font-size: 16px;
+}
+.contain {
+  clear: both;
+  min-height: 30px;
+}
+.contain .parameter {
+  float: left;
+  width: 180px;
+}
+.contain .requestmethod, .contain .requesturl {
+  float: left;
+  margin-top: 7px;
+  font-weight: bold;
+}

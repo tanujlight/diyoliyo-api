@@ -1,0 +1,331 @@
+//test file.
+
+doctype html
+html
+	head
+		link(href='/stylesheets/style.css',rel='stylesheet')
+	body
+
+
+	h2 Super-Admin APIs
+
+		form(action='/admin_login',method='post')
+			h3 Login API
+			.parameter Description
+			p This API is used to Login.
+			.contain
+				.parameter Request Method
+				.requestmethod POST
+			.contain
+				.parameter Request URL
+				.requesturl /admin_login
+			.parameter Input Parameters
+			label email:
+			input(type='text',name='email')
+			label password:
+			input(type='password',name='password')
+			input(type='submit',value='Submit')
+			br
+			br
+			
+			
+		form(action='/create_category',method='post')
+			h3 Create New Category
+			.parameter Description
+			p This API is used to Create New Category.
+			.contain
+				.parameter Request Method
+				.requestmethod POST
+			.contain
+				.parameter Request URL
+				.requesturl /create_category
+			.parameter Input Parameters
+			label access_token:
+			input(type='text',name='access_token')
+			label category_name:
+			input(type='text',name='category_name')
+			input(type='submit',value='Submit')
+			br
+			br
+			
+			
+		form(action='/create_sub_category',method='post')
+			h3 Create New Sub Category
+			.parameter Description
+			p This API is used to Create New Sub Category.
+			.contain
+				.parameter Request Method
+				.requestmethod POST
+			.contain
+				.parameter Request URL
+				.requesturl /create_sub_category
+			.parameter Input Parameters
+			label acsess_token:
+			input(type='text',name='access_token')
+			label category_id:
+			input(type='text',name='category_id')
+			label sub_category_name:
+			input(type='text',name='sub_category_name')
+			input(type='submit',value='Submit')
+			br
+			br
+
+
+
+		form(action='/add_attribute',method='post')
+			h3 Add new Attribute
+			.parameter Description
+			p This API is used to Add new Attribute.
+			.contain
+				.parameter Request Method
+				.requestmethod POST
+			.contain
+				.parameter Request URL
+				.requesturl /add_attribute
+			.parameter Input Parameters
+			label acsess_token:
+			input(type='text',name='access_token')
+			label category_id:
+			input(type='text',name='category_id')
+			label sub_category_id:
+			input(type='text',name='sub_category_id')
+			label attribute_name:
+			input(type='text',name='attribute_name')
+			label attribute_values:
+			input(type='text',name='values')
+			input(type='submit',value='Submit')
+			br
+			br
+
+
+		form(action='/edit_attribute',method='put')
+			h3 Edit Attribute
+			.parameter Description
+			p This API is used to Edit Attribute.
+			.contain
+				.parameter Request Method
+				.requestmethod put
+			.contain
+				.parameter Request URL
+				.requesturl /edit_attribute
+			.parameter Input Parameters
+			label acsess_token:
+			input(type='text',name='access_token')
+			label category_id:
+			input(type='text',name='category_id')
+			label sub_category_id:
+			input(type='text',name='sub_category_id')
+			label attribute_id:
+			input(type='text',name='attribute_id')
+			label attribute_name:
+			input(type='text',name='attribute_name')
+			label attribute_value_id:
+			input(type='text',name='attribute_value_id')
+			label attribute_values:
+			input(type='text',name='attribute_values')
+			input(type='submit',value='Submit')
+			br
+			br
+			
+			
+	h2 Vendor APIs
+
+
+
+		form(action='/change_password',method='put')
+			h3 Change Password
+			.parameter Description
+			p This API is used to Change Password.
+			.contain
+				.parameter Request Method
+				.requestmethod put
+			.contain
+				.parameter Request URL
+				.requesturl /change_password
+			.parameter Input Parameters
+			label access_token:
+			input(type='text',name='access_token')
+			label old_password:
+			input(type='password',name='old_password')
+			label new_password:
+			input(type='password',name='new_password')
+			input(type='submit',value='Submit')
+			br
+			br
+			
+			
+		form(action='/forgot_password',method='post')
+			h3 Forgot Password
+			.parameter Description
+			p This API is used to Forgot Password.
+			.contain
+				.parameter Request Method
+				.requestmethod post
+			.contain
+				.parameter Request URL
+				.requesturl /forgot_password
+			.parameter Input Parameters
+			label email_id:
+			input(type='text',name='email')
+			input(type='submit',name='Submit')
+			br
+			br
+
+
+		form(action='/update_password_vendor',method='put')
+			h3 Update Password
+			.parameter Description
+			p This API is used to Update Password.
+			.contain
+				.parameter Request Method
+				.requestmethod Put
+			.contain
+				.parameter Request URL
+				.requesturl /update_password_vendor
+			.parameter Input Parameters
+			label verifcation_token:
+			input(type='text',name='verifcation_token')
+			label password:
+			input(type='password',name='password')
+			input(type='submit',name='Submit')
+			br
+			br
+			
+		form(action='/add_product',method='post')
+			h3 Add New Product
+			.parameter Description
+			p This API is used to Add New Product.
+			.contain
+				.parameter Request Method
+				.requestmethod post
+			.contain
+				.parameter Request URL
+				.requesturl /add_product
+			.parameter Input Parameters
+			label access_token:
+			input(type='text',name='access_token')
+			label category_id:
+			input(type='text',nam'category_id')
+			label sub_category_id:
+			input(type='text',name='sub_category_id')
+			label brand_id:
+			input(type='text',name='brand_id')
+			label product_name:
+			input(type='text',name='prooduct_name')
+			label product_description:
+			input(type='text',name='product_description')
+			label final_price:
+			input(type='text',name='final_price')
+			label actual_price:
+			input(type='text',name='actual_price')
+			label measuring_unit:
+			input(type='text',name='measuring_unit')
+			label product_image:
+			input(type='text',name='product_image')
+			input(type='submit',value='Submit')
+			br
+			br
+			
+			
+		form(action='/delete_product',method='delete')
+			h3 Delete Product
+			.parameter Description
+			p This API is used to Delete Product.
+			.contain
+				.parameter Request Method
+				.requestmethod delete
+			.contain
+				.parameter Request URL
+				.requesturl /delete_product
+			.parameter Input Parameters
+			label access_token:
+			input(type='text',name='access_token')
+			label product_id:
+			input(type='text',name='product_id')
+			input(type='submit',value='Submit')
+			br
+			br
+		
+
+	h2 Customer APIs
+
+
+			
+		form(action='/customer_login',method='post')
+			h3 Customer Login
+			.parameter Description
+			p This API is used to Customer Login.
+			.contain
+				.parameter Request Method
+				.requestmethod post
+			.contain
+				.parameter Request URL
+				.requesturl /customer_login
+			.parameter Input Parameters
+			label email:
+			input(type='text',name='email')
+			label password:
+			input(type='text',name='password')
+			input(type='submit',value='Submit')
+			br
+			br
+
+
+		form(action='/change_password_customer',method='put')
+			h3 Change Password for Customer
+			.parameter Description
+			p This API is used to Change Password for Customer.
+			.contain
+				.parameter Request Method
+				.requestmethod put
+			.contain
+				.parameter Request URL
+				.requesturl /change_password_customer
+			.parameter Input Parameters
+			label access_token:
+			input(type='text',name='access_token')
+			label old_password:
+			input(type='password',name='old_password')
+			label new_password:
+			input(type='password',name='new_password')
+			input(type='submit',value='Submit')
+			br
+			br
+			
+			
+		form(action='/forgot_password_customer',method='post')
+			h3 Forgot Password for Customer
+			.parameter Description
+			p This API is used to Forgot Password for Customer.
+			.contain
+				.parameter Request Method
+				.requestmethod post
+			.contain
+				.parameter Request URL
+				.requesturl /forgot_password_customer
+			.parameter Input Parameters
+			label email_id:
+			input(type='text',name='email')
+			input(type='submit',name='Submit')
+			br
+			br
+
+
+		form(action='/update_password_customer',method='put')
+			h3 Update Password
+			.parameter Description
+			p This API is used to Update Password.
+			.contain
+				.parameter Request Method
+				.requestmethod Put
+			.contain
+				.parameter Request URL
+				.requesturl /update_password_customer
+			.parameter Input Parameters
+			label verifcation_token:
+			input(type='text',name='verifcation_token')
+			label password:
+			input(type='password',name='password')
+			input(type='submit',name='Submit')
+			br
+			br
