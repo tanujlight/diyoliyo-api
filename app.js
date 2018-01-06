@@ -1,12 +1,23 @@
 var mysql = require('mysql');
 
 //====Localhost Database====//
+// var db_config = {
+//    // port: '8889',
+//    host: 'localhost',
+//    //host: '127.0.0.1',
+//    user: 'root',
+//    password: '',
+//    //password: '',
+//   database: 'diyoliyo'
+// };
+
+//====server Database====//
 var db_config = {
    // port: '8889',
-   host: 'localhost',
+   host: 'mysql://mysql:3306/',
    //host: '127.0.0.1',
    user: 'root',
-   password: '',
+   password: '1234',
    //password: '',
   database: 'diyoliyo'
 };
